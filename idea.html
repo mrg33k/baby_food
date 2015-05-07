@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>ThinkSync</title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+   <script>
+  $(function() {
+    $( ".ts_slider" ).slider();
+    $(".ts_menu_search_button").click(function(){
+        $('.ts_search_box').toggle('slow');
+    });
+  });
+  </script></head>
+
+  <body class="ts_body">
+        <div class="ts_ideas_container">
+
+                <!--Navigation-->
+                <div class="ts_nav">
+
+                    <!--Menu Button-->
+
+                    <div class="ts_back_button ">
+                    <a style="width:100%;height:100%;display:block; text-decoration:none;color:#005e6a" class="ion-arrow-left-c" href="index.html"></a>        
+                    </div>
+
+                    <!--Page Title-->
+                    <div class="ts_menu_title">            
+                        <h2>Brunch This Weekend?</h2>
+                    </div>
+
+                    <!--Search Button-->
+                    <div class="ts_menu_search_button">            
+                    </div>       
+                </div>
+
+                <!--Main Container-->
+
+                <!--Search-->
+                <div class="ts_search_box">
+                    <input class="ts_search_input" type="text" placeholder="Search">
+                </div>
+
+                <!--Ideaversation-->
+                <div class="ts_iderversation_container">
+
+                    <!--Idea - User B-->
+                    <div class="ts_single_idea_container ts_single_idea_user_b">
+
+                        <!--Profile Picture-->    
+                        
+                            <div class="ts_single_idea_profile_ref_pic"></div>
+                        
+                        <!--Idea Container-->
+                       
+                            <div class="ts_single_idea_inner_container">
+
+                              <!--Play/Pause Toggle-->  
+                              
+                              <div class="ts_single_idea_innner_action_button">
+                              <span class="ion-play"></span>
+                              </div>
+
+                              <!--Recording Timeline-->
+                              
+                              <div class="ts_single_idea_inner_timeline">
+                                <div class="ts_slider"></div>
+                              </div>
+
+                              <!--Tag button-->
+                              <div class="ts_single_idea_tag_button ion-ios-pricetags-outline">
+                              </div>  
+
+                          </div>
+
+                    </div>
+                     <div class="ts_single_idea_container ts_single_idea_user_a">
+
+                        <!--Profile Picture-->    
+                        
+                            
+                        
+                        <!--Idea Container-->
+                       
+                            <div class="ts_single_idea_inner_container">
+                             
+                               <!--Play/Pause Toggle-->  
+                              
+                              <div class="ts_single_idea_innner_action_button">
+                              <span class="ion-play"></span>
+                              </div>
+                              <!--Recording Timeline-->
+                              
+                              <div class="ts_single_idea_inner_timeline">
+                                <div class="ts_slider"></div>
+                              </div>
+
+                             
+                                  <!--Tag button-->
+                              <div class="ts_single_idea_tag_button ion-ios-pricetags-outline">
+                              </div> 
+
+                          </div>
+                          <div class="ts_single_idea_profile_ref_pic"></div>
+
+                    </div>
+
+                    
+                </div>
+               
+
+                <!--Controller-->
+                <div class="ts_controller">
+
+                    <!--Text Message-->
+                    <div class="ts_controller_textbox">
+                        <input type="text" placeholder="Text Message">
+                    </div>
+
+                    <!--Send button-->
+                    <div class="ts_controller_go_container">
+                        <div class="ts_controller_go">Go</div>
+                    </div>
+
+                    <!--Controller Second Level Container-->
+                    <div class="ts_controller_feedback_timer">
+
+                        <!--Amplification Level-->
+                        <div class="ts_controller_soundfeedback">
+                            <div class="ts_controller_feedback"></div>
+                        </div>
+
+                        <!--Cancel Recording Button-->
+                        <div class="ts_controller_cancel_recording">
+                            <span class="ion-close-circled icon"></span>
+                        </div>
+
+                        <!--Recording Time-->
+                        <div class="ts_controller_record_timer">
+                            <p class="ts_controller_timer_text">00:00</p>
+                        </div>
+                        
+                        <!--Record Button-->
+                        <div class="ts_controller_record">
+                        <span class="ion-mic-a ts_mic"></span>
+                        </div> 
+                        
+                    </div>
+
+                </div>                                  
+        </div>
+
+       
+
+
+
+
+
+  </body>
+</html>

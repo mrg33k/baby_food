@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>ThinkSync</title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+          <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+      <script>
+  $(function() {
+    $( ".ts_slider" ).slider();
+    $(".ts_menu_button").click(function(){
+        $('.ts_sidemenu_container').toggle('slow');
+    });
+    $(".ts_menu_search_button").click(function(){
+        $('.ts_search_box').toggle('slow');
+    });
+  });
+  </script>
+  </head>
+
+  <body class="ts_body">
+        <div class="ts_ideas_container">
+
+                <!--Navigation-->
+                <div class="ts_nav">
+
+                    <!--Menu Button-->
+
+                    <div class="ts_menu_button">
+                         
+                    </div>
+
+                    <!--Page Title-->
+                    <div class="ts_menu_title">            
+                        <h2>Ideas</h2>
+                    </div>
+
+                    <!--Search Button-->
+                    <div class="ts_menu_search_button">            
+                    </div>       
+                </div>
+
+                <!--Main Container-->
+
+                <!--Search-->
+                <div class="ts_search_box">
+                    <input class="ts_search_input" type="text" placeholder="Search">
+                </div>
+
+                <!--Sort-->
+                <h4 class="ts_sort">sort</h4>
+
+                <!--Idea1-->
+                <div class="ts_idea">
+
+                    <!--Latest Idea's Profile Pic-->
+                    <div class="ts_idea_profile_pic">
+                        <img src="img/fp1.png" alt="ives"/>
+                    </div>
+
+                    <!--Idea Information-->
+                    
+                    <div class="ts_idea_info">
+                    <a href="idea.html" style="display:block;width:100%;height:100%;text-decoration:none;">
+                        <!--Idea Name-->
+                        <h5 class="ts_idea_name">IOS Design Team</h5>           
+
+                        <!--Idea Brief Description--> 
+                        <p class="ts_latest_message"><b class="ts_latest_persons_name">Jon</b> — Let's do something that has never been done before.</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!--Idea 2-->
+                <div class="ts_idea">
+
+                    <!--Latest Idea's Profile Pic-->
+                    <div class="ts_idea_profile_pic">
+                        <img src="img/fp2.png" alt="ives"/>
+                    </div>
+
+                    <!--Idea Information-->
+                    <div class="ts_idea_info">
+
+                        <!--Idea Name-->
+                        <h5 class="ts_idea_name">Lost ForeverBook Club</h5>           
+
+                        <!--Idea Brief Description--> 
+                        <p class="ts_latest_message"><b class="ts_latest_persons_name">Josie</b> — Audio Message</p>
+                        
+                    </div>
+                </div>
+
+                <!--Idea 3-->
+                <div class="ts_idea">
+
+                    <!--Latest Idea's Profile Pic-->
+                    <div class="ts_idea_profile_pic">
+                        <img src="img/fp3.png" alt="ives"/>
+                    </div>
+
+                    <!--Idea Information-->
+                    <div class="ts_idea_info">
+
+                        <!--Idea Name-->
+                        <h5 class="ts_idea_name">MW3 Clan</h5>           
+
+                        <!--Idea Brief Description--> 
+                        <p class="ts_latest_message"><b class="ts_latest_persons_name">Stacy</b> — Audio Message</p>
+                        
+                    </div>
+                </div>
+
+                <!--Idea 4-->
+                <div class="ts_idea">
+
+                    <!--Latest Idea's Profile Pic-->
+                    <div class="ts_idea_profile_pic">
+                        <img src="img/fp4.png" alt="ives"/>
+                    </div>
+
+                    <!--Idea Information-->
+                    <div class="ts_idea_info">
+
+                        <!--Idea Name-->
+                        <h5 class="ts_idea_name">Massage Parlor Staff</h5>           
+
+                        <!--Idea Brief Description--> 
+                        <p class="ts_latest_message"><b class="ts_latest_persons_name">Meyling </b> — I don't this this man has ever ever never ever</p>
+                        
+                    </div>
+                </div>
+
+                <!--Controller-->
+                <div class="ts_controller">
+
+                    <!--Text Message-->
+                    <div class="ts_controller_textbox">
+                        <input type="text" placeholder="Text Message">
+                    </div>
+
+                    <!--Send button-->
+                    <div class="ts_controller_go_container">
+                        <div class="ts_controller_go">Go</div>
+                    </div>
+
+                    <!--Controller Second Level Container-->
+                    <div class="ts_controller_feedback_timer">
+
+                        <!--Amplification Level-->
+                        <div class="ts_controller_soundfeedback">
+                            <div class="ts_controller_feedback"></div>
+                        </div>
+
+                        <!--Cancel Recording Button-->
+                        <div class="ts_controller_cancel_recording">
+                            <span class="ion-close-circled icon"></span>
+                        </div>
+
+                        <!--Recording Time-->
+                        <div class="ts_controller_record_timer">
+                            <p class="ts_controller_timer_text">00:00</p>
+                        </div>
+                        
+                        <!--Record Button-->
+                        <div class="ts_controller_record"><span class="ion-mic-a ts_mic"></span></div> 
+                        
+                    </div>
+
+                </div>                                  
+        </div>
+
+        <!--Side Menu-->
+        <div class="ts_sidemenu_container">
+            <div class="ts_sidemenu_bg">
+
+                <!--Profile Container-->
+                <div class="ts_sidemenu_profile_container">
+
+                    <!--Profile Picture-->
+                    <div class="ts_sidemenu_profile_picture">            
+                    </div>
+
+                    <!--Profile Options Container-->
+                    <div class="ts_sidemenu_profile_options_container">
+                        
+                        <!--Profile Username-->           
+                        <div class="ts_sidemenu_profile_options_username"><p>@MrG33k</p></div>
+                        
+
+                        <!--Share Icon-->
+                        <div class="ts_sidemenu_profile_share">
+                            <span class="ion-android-share-alt"></span>
+                        </div>
+                        
+                       
+                    
+                    </div>
+                </div>
+
+                <div class="ts_sidemenu_options">
+
+                    <div class="ts_sidemenu_single_option">
+                        <div class="ts_option_icon ion-home"></div>
+                        <div class="ts_option_text"><span><a class='no-nothing' href="index.html">Home</a></span></div>
+                    </div>
+
+                     <div class="ts_sidemenu_single_option">
+                        <div class="ts_option_icon ion-at"></div>
+                        <div class="ts_option_text"><span>Contacts</span></div>
+                    </div>
+
+                     <div class="ts_sidemenu_single_option">
+                        <div class="ts_option_icon ion-ios-albums-outline"></div>
+                        <div class="ts_option_text"><span>Manage Ideas</span></div>
+                    </div>
+
+                     <div class="ts_sidemenu_single_option">
+                        <div class="ts_option_icon ion-ios-briefcase"></div>
+                        <div class="ts_option_text"><span>Corprate Sync Settings</span></div>
+                    </div>
+
+                     <div class="ts_sidemenu_single_option">
+                        <div class="ts_option_icon ion-ios-pulse"></div>
+                        <div class="ts_option_text"><span>Transcription Services</span></div>
+                    </div>
+
+                     <div class="ts_sidemenu_single_option">
+                        <div class="ts_option_icon ion-android-exit"></div>
+                        <div class="ts_option_text"><span>Logout</span></div>
+                    </div>
+                    <hr>
+                    <div class="our_rights">
+                </div>
+
+
+
+
+            
+            </div>    
+        </div>
+
+
+
+
+
+  </body>
+</html>

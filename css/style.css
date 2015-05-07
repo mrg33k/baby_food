@@ -1,0 +1,123 @@
+@import url('jquery-ui.css');
+/*
+	ThinSync Ui
+	-----------
+	1=> Globals
+	2=> Navigation
+	3=> Search
+	4=> Idea Object
+	5=> Controller
+	6=> Menu
+	7=> Idea
+
+*/
+
+
+/*
+	1	Globals
+*/
+
+		.ts_body{max-width: 400px;margin: 0 auto;}
+		.no-nothing{text-decoration: none;color:#333;}
+
+
+/*
+	2	Navigation 
+*/
+
+		.ts_nav{height:90px;padding: 26px 20px 0px 20px;background:#26A2F7;}
+		.ts_menu_button{width: 8.25%;background: url('../img/menu.png') no-repeat top center;height: 33px;display:inline-block;  vertical-align: -19px;}
+		.ts_back_button{width: 8.25%;font-size:27px;height: 33px;display:inline-block; color:#005E6A;vertical-align: -3px}
+		.ts_menu_title{width:75%;display:inline-block;}
+		.ts_menu_title h2{font-family: Roboto-Regular;font-size: 23px;color: #FFFFFF;line-height: 47px;margin-left: 12px;}
+		.ts_menu_search_button{ cursor: pointer; width: 8.25%;background: url('../img/search.png') no-repeat 0px 16px;height: 40px;display: inline-block;float: right;vertical-align: bottom;}
+
+
+/*
+	3	Search
+*/
+
+		.ts_search_box{display:none;padding:25px; border-bottom: 1px solid #ececec}
+		.ts_search_input{padding: 20px 0px 14px 14px !important;color:#ececec;border: 1px solid #ececec !important;font-size: 19px !important;width: 100%;height:40px !important;border-radius: 3px;}
+		.ts_sort{ color:#ccc;font-size: 15px;padding:23px 0px 26px 23px;cursor: pointer;}
+
+
+/*
+	4	Idea
+*/
+
+		.ts_idea{height: 71px;}
+		.ts_idea:hover{background: #fafafa;}
+		.ts_idea_profile_pic{width:20%;display: inline-block;padding: 0px 0px 0px 20px;vertical-align: 20px;}
+		.ts_idea_profile_pic img{border-radius: 100px;border: 1px solid #9a9a9a;}
+		.ts_idea_info{width:79%;display: inline-block;vertical-align: 21px;border-bottom: 1px solid #ccc;padding: 10px 70px 20px 0px;}
+		.ts_idea_info p{margin:0px;color:#ccc;}
+		.ts_idea_name{font-family: Roboto-Regular;font-size: 16px;color: #4D4D4D;line-height: 20px;margin: 0px;}
+		.ts_latest_persons_name{color:#4d4d4d;font-weight: 300}
+		.ts_latest_message{  text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+
+
+/*
+	5	Controller
+*/		
+
+		.ts_controller{position: absolute;bottom:0px;height:122px;border-top: 1px solid #ccc;width: 400px;margin: 0 auto;background: #fff}
+		.ts_controller_textbox{width:83.8%;display:inline-block;}
+		.ts_controller_textbox input{padding: 0px 0px 0px 20px;display: inline-block;width: 85%;}
+		.ts_controller_go{background: #0CD325;height: 35px;width: 34px;margin: 0 auto;padding: 7px;color:#fff;cursor: pointer;border-radius: 3px;}
+		.ts_controller_go_container{width: 10%;display: inline-block;padding:10px;}
+		.ts_controller_feedback{background: #D0031B;border:2px solid #FFFFFF;width:220px;height: 10px;border-radius: 100px;}
+		.ts_controller_soundfeedback{width:67%;height:25px;padding:15px 0px 0px 19px;display: inline-block;}
+		.ts_controller_cancel_recording{width: 4%; height: 19px; display: inline-block;cursor: pointer;}
+		.ts_controller_record_timer{width:8%;font-size: 12px;display:inline-block;}
+		.ts_controller_feedback_timer{margin-top: 5px;}
+		.ts_controller_record{width: 14%;background: #D0031B;color:white;display: inline-block;border-radius: 200px;margin-left: 10px;cursor: pointer;}
+		.ts_controller_record span{width: 14%; background: #D0031B; color: white; display: inline-block; margin-left: 13px; border-radius: 300px; padding: 10px;font-size: 1.3em;}
+
+
+/*
+	6 	Menu
+*/
+		.ts_sidemenu_container{display:none;position: absolute;width: 100%;background: rgba(0,0,0,0.7);top: 0;left: 0;height: 100%;min-height: 900px;}
+		.ts_sidemenu_bg{width: 320px; position: absolute;background: white;left: 0;top: 0;height: 100%}
+		.ts_sidemenu_profile_container{height: 250px;background: url('../img/phoenix-golf-pond.png') no-repeat center center ;max-width: 100%;background-size: cover;padding:61px;}
+		.ts_sidemenu_profile_picture{max-width: 100px;height: 104px;background:#26A2F7;margin:0 auto;border-radius:300px;}
+		.ts_sidemenu_profile_options_username{color:#eee; text-align: center;display: inline-block;padding-top: 10px;padding-left:55px;font-size:1.3em;font-weight: 700;}
+		.ts_sidemenu_profile_share{width:40px;height:40px;padding-left:25px;color:#fff;font-size: 22px;display: inline-block;cursor: pointer;}	
+		.ts_sidemenu_options{width:85%;margin:50px auto;}
+		.ts_sidemenu_single_option{margin: 10px auto;cursor: pointer;}
+		.ts_option_icon{width:50px;height:50px;display: inline-block;font-size: 30px;color:#00A5DB;}
+		.ts_option_text{display: inline-block;font-size: 18px;}
+		.our_rights{width:60%;float:right;background: url('../img/rights.png') no-repeat top center;height: 50px;margin-top: 10px;}
+
+/*
+	7	Idea
+*/		
+		.ts_iderversation_container{overflow: scroll;max-height: 593px;padding: 0px 0px 30px 0px;}
+		.ts_single_idea_container{width:90%; margin: 25px auto 0px 0%;height: 100px;}
+		
+		.ts_single_idea_profile_ref_pic{width:11%;margin:23px 0px 0px 10px;display: inline-block;padding: 0px 0px 0px 20px;vertical-align: 20px;background: url('../img/fp1.png') no-repeat top center;background-size:cover;height: 40px;border-radius: 200px;border: 2px solid #ccc;}
+		
+		.ts_single_idea_inner_container{display: inline-block; width: 79%; height: 80px; border: 2px solid #cecece; vertical-align:50px; margin: 0px 0px 0px 5px;}
+		.ts_single_idea_innner_action_button{cursor:pointer;width:16%;height: 45px;display:inline-block;border-radius: 100px;text-align: center;color:#ccc;border:1px solid #ccc;margin: 15px 15px 15px 10px }
+		.ts_single_idea_innner_action_button span{vertical-align: -14px;font-size: 22px;margin-left: 2px;}
+		.ts_single_idea_tag_button{display:inline-block;width:8%;font-size:24px;color:#A7A4A4; -webkit-transform: rotate(45deg);-moz-transform: rotate(100deg);-ms-transform: rotate(180deg);-o-transform: rotate(180deg);transform: rotate(280deg);vertical-align: -16px;margin-left: 12px;}
+		.ts_single_idea_inner_timeline{width:55%;display: inline-block;vertical-align: -13px}
+
+		.ts_single_idea_user_a{margin: 10px 0% 0px auto;}
+		.ts_single_idea_user_a .ts_single_idea_profile_ref_pic{background: url('../img/elon.png') no-repeat top center;}
+		.ts_single_idea_user_a .ts_single_idea_innner_action_button{}
+		.ts_single_idea_user_a .ts_single_idea_inner_timeline{}
+		.ts_single_idea_user_a .ts_single_idea_tag_button{}
+
+
+
+
+
+
+
+
+
+
+
+
